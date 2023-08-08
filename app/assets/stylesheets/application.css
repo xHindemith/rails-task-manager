@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.form-check-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 24px;
+}

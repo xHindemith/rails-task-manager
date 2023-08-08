@@ -1,0 +1,14 @@
+<div class="container mt-3">
+  <div class="centered-content">
+    <h1>Task list ✅</h1>
+    <ul>
+      <h2><%= @task.title %></h2>
+      <p><%= @task.details %></p>
+    </ul>
+    <%= link_to "Back to tasks", tasks_path  %>
+    <br>
+    <%= link_to "Edit task", edit_task_path  %>
+    <br>
+    <p><%= link_to '🗑️', task_path(@task), class: 'btn btn-light', data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %></p>
+    </div>
+</div>
